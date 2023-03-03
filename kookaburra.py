@@ -3,11 +3,6 @@ from langchain.llms import OpenAI
 from langchain.chains import ChatVectorDBChain
 from langchain.embeddings import HuggingFaceEmbeddings, HuggingFaceInstructEmbeddings
 from langchain.vectorstores import FAISS
-import os
-from typing import Optional, Tuple
-import gradio as gr
-import pickle
-from threading import Lock
 
 model_options = {'all-mpnet-base-v2': "sentence-transformers/all-mpnet-base-v2",
                 'instructor-base': "hkunlp/instructor-base"}
